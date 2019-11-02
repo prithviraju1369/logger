@@ -16,5 +16,4 @@ app.post('/logger', function(req, res,next) {
     // client.emit('message', req.body);
     io.emit('message', req.body);
 });
-server.listen(3000);
-console.log('Logger server listening on port : 3000');
+server.listen(80);
