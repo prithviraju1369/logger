@@ -49,7 +49,7 @@
     <script>
       var socket = io.connect();
       socket.on("message", function(data) {
-        $("#messages").append(`${data.logLevel} : ${data.message}<br/>`);
+        $("#messages").append(`INFO : ${data.message}<br/>`);
       });
     </script>
   </body>
