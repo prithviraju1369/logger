@@ -15,5 +15,6 @@ app.post('/logger', function(req, res,next) {
     console.log(req.body);
     // client.emit('message', req.body);
     io.emit('message', JSON.stringify(req.body));
+    res.send({})
 });
 server.listen(process.env.PORT || 3000);
